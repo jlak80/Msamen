@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Msamen - Jeu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Msamen - Jeu Virtuel</h1>
+    <input type="text" id="username" placeholder="Pseudo">
+    <button onclick="authUser()">Se connecter</button>
+    <p id="userInfo"></p>
+
+    <div id="msamen">🥞</div>
+    <p>Maintenez le Msamen pendant <span id="timer">30</span> secondes</p>
+    <button id="startButton" onclick="startGame()">Commencer</button>
+
+    <div id="assiette">🍽️</div>
+    <button id="payButton" onclick="payPi()" style="display:none;">Payer 1 Pi virtuel</button>
+    <p id="paymentStatus"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
